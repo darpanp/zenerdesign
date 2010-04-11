@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Zeiner Design and Drafting</title>
+  <meta name="description" content="Architectural design and drafting company" />
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+  <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  <%= javascript_include_tag "javascript" %>
+  <%= javascript_include_tag "jquery-1.4.1" %>
+</head>
+<body>
+  <div class="container">
+	<!--header-->
+	<div class="span-20 prepend-2 append-2">
+	    <div class="span-8">
+		<img src="images/b_top.jpg" class="top" alt="header top image" />
+		<div class="span-6">
+		    <br />
+		    <img src="images/images/companylogo.jpg" alt="Company Logo" />
+		</div>
+	    </div>
+	    <div id="home" class="span-3">
+		<a href="#"><img id="home_img" src="images/images/btn_home.jpg" /></a>
+	    </div>
+	    <div id="aboutus" class="span-3">
+		<a  href="#"><img id="aboutus_img" src="images/images/btn_about.jpg"/></a>
+	    </div>
+	    <div id="contactus" class="span-3">
+		<a href="#"><img id="contactus_img" src="images/images/btn_contacts.jpg"/></a>
+	    </div>   
+	</div>
+	
+	<!--space between header and body-->
+	<div class="span-20 prepend-2 append-2">
+	    <br />  
+	</div>
+	
+	<!-- body -->
+	<%= yield %>
+        
+        <!--footer-->
+	<div class="clear"></div>
+	<div class="span-20 append-2">
+	    <div id="footer">
+		<img src="images/images/call.jpg" alt="" width="156" height="37" />
+		
+		<p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">CONTACTS</a></p>
+		<!--<div id="footerright">-->
+		<!--    <ul>-->
+		<!--	<li>Zeiner Designs</li>-->
+		<!--	<li>837 Concord Street</li>-->
+		<!--	<li>Hagerstown, MD 21740</li>-->
+		<!--    </ul>-->
+		<!--</div>-->
+	    </div>
+	</div>
+	<div class="span-20 append-2">
+	    <div id="bottom">
+		<p align="right">Copyright &copy; Zeiner Designs.</p>
+	    </div>
+	</div>
+    </div>
+  
+</body>
+</html>
