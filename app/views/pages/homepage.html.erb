@@ -11,7 +11,7 @@
 		    <p>
 			<label>User ID</label><input type="text" size="10" maxlength="30" />
 			<label>Password</label><input type="password" size="10" maxlength="30" />
-			<input type="image" src="images/btn_submit.jpg" tabindex="9" title="Login" class="submitBtn" />
+			<%= image_submit_tag("images/btn_submit.jpg", :class => 'submitBtn') %>
 		    </p>
 		</div>
 		<div class="register">
@@ -19,10 +19,10 @@
 		</div>
 	    </div>
 	    <div id="mainimgPan" class="pull-quart span-14 last">
-		<a href=#><img class="priceQuote" src="images/images/btn_quote.jpg" /></a>
+		<a href=#><%= image_tag("images/btn_quote.jpg", :class => "priceQuote") %></a>
 		<div id="mainimg" />
-		<img class="sloganTitle" src="images/images/slogan_text_title.jpg" />
-		<img class="sloganDesc" src="images/images/slogan_text_desc.jpg" />
+		<%= image_tag("images/slogan_text_title.jpg", :class => "sloganTitle") %>
+		<%= image_tag("images/slogan_text_desc.jpg", :class => "sloganDesc") %>
 	    </div>
 	    </form>
 	</div>

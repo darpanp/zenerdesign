@@ -15,20 +15,20 @@
 	<!--header-->
 	<div class="span-20 prepend-2 append-2">
 	    <div class="span-8">
-		<img src="images/b_top.jpg" class="top" alt="header top image" />
+		<%= image_tag("images/b_top.jpg", :alt => "header top image", :class => "top") %>
 		<div class="span-6">
 		    <br />
-		    <img src="images/images/companylogo.jpg" alt="Company Logo" />
+		    <%= image_tag("images/companylogo.jpg", :alt => "Company Logo") %>
 		</div>
 	    </div>
 	    <div id="home" class="span-3">
-		<a href="#"><img id="home_img" src="images/images/btn_home.jpg" /></a>
+		<a href="#"><%= image_tag("images/btn_home.jpg", :id => "home_img") %></a>
 	    </div>
 	    <div id="aboutus" class="span-3">
-		<a  href="#"><img id="aboutus_img" src="images/images/btn_about.jpg"/></a>
+		<a  href="#"><%= image_tag("images/btn_about.jpg", :id => "aboutus_img") %></a>
 	    </div>
 	    <div id="contactus" class="span-3">
-		<a href="#"><img id="contactus_img" src="images/images/btn_contacts.jpg"/></a>
+		<a href="#"><%= image_tag("images/btn_contacts.jpg", :id => "contactus_img") %></a>
 	    </div>   
 	</div>
 	
@@ -44,8 +44,7 @@
 	<div class="clear"></div>
 	<div class="span-20 append-2">
 	    <div id="footer">
-		<img src="images/images/call.jpg" alt="" width="156" height="37" />
-		
+		<%= image_tag("images/call.jpg", :width => "156", :height => "37") %>
 		<p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">CONTACTS</a></p>
 		<!--<div id="footerright">-->
 		<!--    <ul>-->

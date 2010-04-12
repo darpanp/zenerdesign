@@ -1,5 +1,6 @@
 /* CSS Document */
 body{padding:0px; margin:0px; background:#2f383f; color:#FFF;} /* font:10px/14px Tahoma, sans-serif;}*/
+.top {margin: 0px 0 5px 0;}
 
 div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
 ul{list-style-type:none;}
@@ -29,7 +30,7 @@ ul.menu li.contacts a:hover{width:92px; height:66px; background:url(../images/bt
 
 #header{width:747px; height:257px; position:relative; margin: 0 auto; clear:both;}
 
-#formPan{width:240px;height:257px; float:left; background:url(../images/images/b_form.jpg) 0 0 no-repeat; }
+#formPan{width:240px;height:257px; float:left; background:url(../images/images/b_form.jpg) 0 0 no-repeat;}
 #formPan h2{height:32px; background: 7px 9px no-repeat; position:relative; color:#505050; font:14px/16px Tahoma, Arial, Helvetica, sans-serif; margin:8px 20px 0px 20px;}
 #formPan p{height:32px; position:relative; color:#505050; font-size:11px; margin: 5px 0px 0px 20px;}
 #formPan div.register{height:32px; position:relative; color:#505050; font-size:11px; margin: 100px 0px 0px 20px;}
@@ -38,7 +39,7 @@ ul.menu li.contacts a:hover{width:92px; height:66px; background:url(../images/bt
 #formPan div p input.submitBtn{margin:5px 0px 0 85px;  width:66px; height:17px; line-height:0; font-size:0;}
 
 
-#mainimage{margin:17px 0px 0px 0px; }
+/*#mainimage{margin:17px 0px 0px 0px; }*/
 
 form.search{color:#353739; margin: 10px 0 0 0; padding:0 0 0 9px;}
 form.search select{height:18px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:80px}
@@ -226,7 +227,7 @@ div#login input#login_btn {
 	left: 86px;
 }
 
-#mainimg{width:560px; position:relative; height:225px; clear:both; background:url(../images/images/b_slogan.jpg) 0 0 no-repeat; margin:17px 0 0 0;}
+#mainimg{width:560px; position:relative; height:225px; clear:both; background:url(../images/images/b_slogan.jpg) 0 0 no-repeat; margin:12px 0 0 0;}
 #mainimg img {position: absolute; top:126px; left:424px}
 
 
@@ -239,12 +240,13 @@ div#login input#login_btn {
 
 
 #services{position:relative; margin: 20px 15px 15px 15px}
-#services h2{width:182px; height:25px; background:url(../images/h_services.jpg) 0 0 no-repeat; position:relative; padding-bottom:15px}
+#services h2{width:182px; height:25px; background:url(../images/images/h_services.jpg) 0 0 no-repeat; position:relative; padding-bottom:15px}
 #services p{width:200px; position:relative; padding: 0 0 0 4px; }
 #services p span{width:200px; font:10px/14px Tahoma, sans-serif; color:#101010; font-weight:bold;}
 #services ul{color:#3c474f; margin:10px 0px 10px 15px;}
 
-.spacerline{width:800px; position:relative; clear:both; height:2px; background:url(../images/b_hline.jpg) 0 0 repeat-x; margin:0 }
+/*used to show spacer line in UI*/
+.spacerline{width:800px; position:relative; clear:both; height:2px; background:url(../images/images/b_hline.jpg) 0 0 repeat-x; margin:0 }
 
 #mortgage {position:relative; margin: 20px 15px 15px 5px}
 #mortgage h2{width:182px; height:25px; position:relative; padding-bottom:15px; margin-left:10px}
@@ -258,7 +260,7 @@ div#login input#login_btn {
 #rightPan{width:535px; position:relative; float:left;}
 
 #welcome{width:500px; position:relative; margin:15px 0 0 15px; }
-#welcome h2{width:285px; height:24px; background:url(../images/h_welcome.jpg) 0 0 no-repeat; position:absolute; top:0; left:0;}
+#welcome h2{width:285px; height:24px; background:url(../images/images/h_welcome.jpg) 0 0 no-repeat; position:absolute; top:0; left:0;}
 #welcome h3{width:113px; height:113px; background:url(../images/img_welcome.jpg) 0 0 no-repeat; position:absolute; top:40px; left:4px;}
 #welcome p{width:350px; position:relative; margin: 0 0 10px 137px; clear:both; padding-top:40px}
 #welcome p span{font:12px/18px Tahoma, sans-serif; color:#00e0f9; font-weight:normal;}
@@ -266,7 +268,7 @@ div#login input#login_btn {
 
 #welcome ul{left:15px; width:155px; position:relative; float:left; padding-bottom:20px;}
 #welcome ul li{height:18px;}
-#welcome ul li a{font:10px/18px Tahoma, sans-serif; color:#fff; font-weight:normal; text-decoration:underline; background:url(../images/arrow1.gif) 0 7px no-repeat; padding: 0 0 0 7px; display:block;}
+#welcome ul li a{font:10px/18px Tahoma, sans-serif; color:#fff; font-weight:normal; text-decoration:underline; background:url(../images/images/arrow1.gif) 0 7px no-repeat; padding: 0 0 0 7px; display:block;}
 #welcome ul li a:hover{text-decoration:none; background:#3c474f;}
 #welcome ul.left {margin: 0 0 0 140px;}
 #welcome ul.right {margin: 0 0 0 30px;}
