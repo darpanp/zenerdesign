@@ -301,7 +301,7 @@ div#login input#login_btn {
 
 #footer{width:800px; height:53px; position:relative; margin: 0 auto; clear:both; background:#3c474f;}
 #footer img{width:156px; height:37px; position:absolute; left:15px; top:9px;}
-#footer p{width:535px; position:relative; margin: 20px 0 0 212px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff; display:block;}
+#footer p{width:535px; position:relative; margin: 20px 0 0 250px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff; display:block;}
 #footer a{font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal;  color:#fff; text-decoration:none; padding: 0 5px}
 #footer a:hover{color:#000; text-decoration:none; background:#fff;}
 #footer div{margin:-10px 0 0 675px; width:150px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal;color:rgb(210,70,18);}
