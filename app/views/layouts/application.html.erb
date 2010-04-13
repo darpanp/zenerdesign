@@ -33,31 +33,32 @@
 	
 	<!--space between header and body-->
 	<div class="span-20 prepend-2 append-2">
-	    <br />  
+	    &nbsp;<br />  
 	</div>
 	
 	<!-- body -->
-	<%= yield %>
-        
+	  <%= yield %>
         <!--footer-->
-	<div class="clear"></div>
-	<div class="span-20 append-2">
-	    <div id="footer">
-		<%= image_tag("images/call.jpg", :width => "156", :height => "37") %>
-		<p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">CONTACTS</a></p>
-		<!--<div id="footerright">-->
-		<!--    <ul>-->
-		<!--	<li>Zeiner Designs</li>-->
-		<!--	<li>837 Concord Street</li>-->
-		<!--	<li>Hagerstown, MD 21740</li>-->
-		<!--    </ul>-->
-		<!--</div>-->
-	    </div>
-	</div>
-	<div class="span-20 append-2">
-	    <div id="bottom">
-		<p align="right">Copyright &copy; Zeiner Designs.</p>
-	    </div>
+	<div class="span-20 prepend-2 append-2">
+	  <div class="clear span-20" />
+	  <div class="span-20">
+	      <div id="footer">
+		  <%= image_tag("images/call.jpg", :width => "156", :height => "37") %>
+		  <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">CONTACTS</a></p>
+		  <!--<div id="footerright">-->
+		  <!--    <ul>-->
+		  <!--	<li>Zeiner Designs</li>-->
+		  <!--	<li>837 Concord Street</li>-->
+		  <!--	<li>Hagerstown, MD 21740</li>-->
+		  <!--    </ul>-->
+		  <!--</div>-->
+	      </div>
+	  </div>
+	  <div class="span-20">
+	      <div id="bottom">
+		  <p align="right">Copyright &copy; Zeiner Designs.</p>
+	      </div>
+	  </div>
 	</div>
     </div>
   
