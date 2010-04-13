@@ -7,8 +7,7 @@
   <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
   <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
   <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-  <%= javascript_include_tag "javascript" %>
-  <%= javascript_include_tag "jquery-1.4.1", "application" %>
+  <%= javascript_include_tag "jquery", "application" %>
 </head>
 <body>
   <div class="container">
@@ -22,13 +21,13 @@
 		</div>
 	    </div>
 	    <div id="home" class="span-3">
-		<a href="#"><%= image_tag("images/btn_home.jpg", :id => "home_img") %></a>
+		<a href="#"><%= image_tag("images/btn_home.jpg", :id => "home_img") %><%= image_tag("images/btn_home_over.jpg", :id => "home_img_hover", :style => "display:none") %></a>
 	    </div>
 	    <div id="aboutus" class="span-3">
-		<a  href="#"><%= image_tag("images/btn_about.jpg", :id => "aboutus_img") %></a>
+		<a  href="#"><%= image_tag("images/btn_about.jpg", :id => "aboutus_img") %><%= image_tag("images/btn_about_over.jpg", :id => "aboutus_img_hover", :style => "display:none") %></a>
 	    </div>
 	    <div id="contactus" class="span-3">
-		<a href="#"><%= image_tag("images/btn_contacts.jpg", :id => "contactus_img") %></a>
+		<a href="#"><%= image_tag("images/btn_contacts.jpg", :id => "contactus_img") %><%= image_tag("images/btn_contacts_over.jpg", :id => "contactus_img_hover", :style => "display:none") %></a>
 	    </div>   
 	</div>
 	
