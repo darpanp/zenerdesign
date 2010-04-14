@@ -1,0 +1,27 @@
+<!--header-->
+<div class="span-20 prepend-2 append-2">
+    <div class="span-8">
+        <%= image_tag("images/b_top.jpg", :alt => "header top image", :class => "top") %>
+        <div class="span-6">
+            <br />
+            <%= image_tag("images/companylogo.jpg", :alt => "Company Logo") %>
+        </div>
+    </div>
+    <div id="home" class="span-3">
+        <%= link_to (image_tag("images/btn_home.jpg", :id => "home_img"), homepage_path) %>
+        <%= link_to (image_tag("images/btn_home_over.jpg", :id => "home_img_hover", :style => "display:none"), homepage_path) %>
+    </div>
+    <div id="aboutus" class="span-3">
+        <%= link_to (image_tag("images/btn_about.jpg", :id => "aboutus_img"), aboutus_path) %>
+        <%= link_to (image_tag("images/btn_about_over.jpg", :id => "aboutus_img_hover", :style => "display:none"), aboutus_path) %>
+    </div>
+    <div id="contactus" class="span-3">
+        <%= link_to (image_tag("images/btn_contacts.jpg", :id => "contactus_img"), contact_path) %>
+        <%= link_to (image_tag("images/btn_contacts_over.jpg", :id => "contactus_img_hover", :style => "display:none"), contact_path) %>
+    </div>   
+</div>
+
+<!--space between header and body-->
+<div class="span-20 prepend-2 append-2">
+    &nbsp;<br />  
+</div>

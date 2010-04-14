@@ -3,64 +3,13 @@
 <head>
   <title>Zeiner Design and Drafting</title>
   <meta name="description" content="Architectural design and drafting company" />
-  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-  <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
-  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-  <%= stylesheet_link_tag 'custom', :media => 'screen' %>
-  <%= javascript_include_tag "jquery", "application" %>
+  <%= render 'layouts/stylesheets' %>
 </head>
 <body>
   <div class="container">
-	<!--header-->
-	<div class="span-20 prepend-2 append-2">
-	    <div class="span-8">
-		<%= image_tag("images/b_top.jpg", :alt => "header top image", :class => "top") %>
-		<div class="span-6">
-		    <br />
-		    <%= image_tag("images/companylogo.jpg", :alt => "Company Logo") %>
-		</div>
-	    </div>
-	    <div id="home" class="span-3">
-		<a href="#"><%= image_tag("images/btn_home.jpg", :id => "home_img") %><%= image_tag("images/btn_home_over.jpg", :id => "home_img_hover", :style => "display:none") %></a>
-	    </div>
-	    <div id="aboutus" class="span-3">
-		<a  href="#"><%= image_tag("images/btn_about.jpg", :id => "aboutus_img") %><%= image_tag("images/btn_about_over.jpg", :id => "aboutus_img_hover", :style => "display:none") %></a>
-	    </div>
-	    <div id="contactus" class="span-3">
-		<a href="#"><%= image_tag("images/btn_contacts.jpg", :id => "contactus_img") %><%= image_tag("images/btn_contacts_over.jpg", :id => "contactus_img_hover", :style => "display:none") %></a>
-	    </div>   
-	</div>
-	
-	<!--space between header and body-->
-	<div class="span-20 prepend-2 append-2">
-	    &nbsp;<br />  
-	</div>
-	
-	<!-- body -->
-	  <%= yield %>
-        <!--footer-->
-	<div class="span-20 prepend-2 append-2">
-	  <div class="clear span-20" />
-	  <div class="span-20">
-	      <div id="footer">
-		  <%= image_tag("images/call.jpg", :width => "156", :height => "37") %>
-		  <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">CONTACTS</a></p>
-		  <!--<div id="footerright">-->
-		  <!--    <ul>-->
-		  <!--	<li>Zeiner Designs</li>-->
-		  <!--	<li>837 Concord Street</li>-->
-		  <!--	<li>Hagerstown, MD 21740</li>-->
-		  <!--    </ul>-->
-		  <!--</div>-->
-	      </div>
-	  </div>
-	  <div class="span-20">
-	      <div id="bottom">
-		  <p align="right">Copyright &copy; Zeiner Designs.</p>
-	      </div>
-	  </div>
-	</div>
+	<%= render 'layouts/header' %>
+	<%= yield %>
+	<%= render 'layouts/footer' %>
     </div>
-  
 </body>
 </html>
