@@ -8,8 +8,10 @@
 <body>
   <div class="container">
 	<%= render 'layouts/header' %>
-	<%= yield %>
+	<div id="contents_div" class="span-20 prepend-2 append-2">
+	  <%= yield %>
+	</div>
 	<%= render 'layouts/footer' %>
-    </div>
+  </div>  
 </body>
 </html>
