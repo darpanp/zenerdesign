@@ -1,17 +1,14 @@
 /* CSS Document */
-body{padding:0px; margin:0px; background:#2f383f; color:#FFF;} /* font:10px/14px Tahoma, sans-serif;}*/
-.top {margin: 0px 0 5px 0;}
-
+body{padding:0px; margin:0px; background:#2f383f; color:#FFF; font:10px/14px Tahoma, sans-serif;}
 div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
-ul{list-style-type:none;}
 
-.clear {clear: both; margin: 0px}
-.spacer{font-size:0; line-height:10px; clear:both;}
-
-/* TOP */
+#top{width:747px; height:91px; position:relative; background:url(../images/b_top.jpg) 0 0 no-repeat; margin: 0 auto;}
 #logo{width:186px; height:36px; position:absolute; top:34px; left:11px }
 
-ul.menu {position:absolute; top:0; left:300px;}
+
+ul{list-style-type:none;}
+
+ul.menu {position:absolute; top:0; left:350px;}
 ul.menu li{float:left}
 
 ul.menu li.home a{width:106px; height:66px; display:block; background:url(../images/btn_home.jpg) 0 0 no-repeat; text-indent:-20000px;}
@@ -20,308 +17,72 @@ ul.menu li.home a:hover{width:106px; height:66px; background:url(../images/btn_h
 ul.menu li.about a{width:88px; height:66px; display:block; background:url(../images/btn_about.jpg) 0 0 no-repeat; text-indent:-20000px;}
 ul.menu li.about a:hover{width:88px; height:66px; background:url(../images/btn_about_over.jpg) 0 0 no-repeat;}
 
-ul.menu li.selling a{width:80px; height:66px; display:block; background:url(../images/btn_selling.jpg) 0 0 no-repeat; text-indent:-20000px;}
-ul.menu li.selling a:hover{width:80px; height:66px; background:url(../images/btn_selling_over.jpg) 0 0 no-repeat;}
-
 ul.menu li.contacts a{width:92px; height:66px; display:block; background:url(../images/btn_contacts.jpg) 0 0 no-repeat; text-indent:-20000px;}
 ul.menu li.contacts a:hover{width:92px; height:66px; background:url(../images/btn_contacts_over.jpg) 0 0 no-repeat;}
 
-/* HEADER */
-
 #header{width:747px; height:257px; position:relative; margin: 0 auto; clear:both;}
 
-#formPan{width:240px;height:257px; float:left; background:url(../images/images/b_form.jpg) 0 0 no-repeat;}
-#formPan h2{height:32px; background: 7px 9px no-repeat; position:relative; color:#505050; font:14px/16px Tahoma, Arial, Helvetica, sans-serif; margin:8px 20px 0px 20px;}
-#formPan p{height:32px; position:relative; color:#505050; font-size:11px; margin: 5px 0px 0px 20px;}
-#formPan div.register{height:32px; position:relative; color:#505050; font-size:11px; margin: 100px 0px 0px 20px;}
-#formPan div{width:200px; margin:0px 0px 0px 20px}
-#formPan div p input{height:16px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:150px}
-#formPan div p input.submitBtn{margin:5px 0px 0 85px;  width:66px; height:17px; line-height:0; font-size:0;}
-
-
-/*#mainimage{margin:17px 0px 0px 0px; }*/
-
-form.search{color:#353739; margin: 10px 0 0 0; padding:0 0 0 9px;}
-form.search select{height:18px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:80px}
-form.search select.location{height:18px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:190px}
-form.search input{height:16px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:85px}
-form.search input.submitBtn{margin:10px 0px 0 120px;  width:66px; height:17px; line-height:0; font-size:0;}
+#formPan{width:212px;height:257px; float:left; background:url(../images/b_form.jpg) 0 0 no-repeat; }
+#formPan h2{position:relative; font:14px/16px sans-serif; color:#505050; margin: 7px 0px 0px 20px;}
+#formPan p{position:relative; color:#505050; font-size:11px; margin: 20px 10px 0px 20px;}
+#formPan div {margin:0px 0px 0px 7px}
+#formPan div p input{height:16px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:150px;}
+#formPan div p input.submitBtn{margin:15px 0px 0 85px;  width:66px; height:17px; line-height:0; font-size:0;}
+#formPan div.register{position:relative; color:#505050; font-size:11px; margin: 10px 0px 0px 20px;}
 
 #mainimgPan{width:535px; float:left;}
-#mainimgPan img.priceQuote{margin:0px 0px 0px 427px;}
-#mainimgPan img.sloganTitle{margin:-90px 10px 10px -105px;}
-#mainimgPan img.sloganDesc{margin:-30px 10px 10px -80px;}
-
 #mainimgPan ul{position:relative; margin: 6px 0 0 65px; clear:both; height:26px;}
-#mainimgPan ul li {float:left; margin-right:40px}
-#mainimgPan ul li.btn1 a{width:133px; height:15px; display:block; background:url(../images/btn_compare.jpg) 0 0 no-repeat; text-indent:-20000px; }
-#mainimgPan ul li.btn2 a{width:196px; height:15px; display:block; background:url(../images/btn_presentation.jpg) 0 0 no-repeat; text-indent:-20000px; }
-#mainimgPan ul li.line {width:2px; height:18px;}
 
-label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-}
-input {
-    width: 13px;
-    height: 13px;
-    padding: 0;
-    margin:0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
-    *overflow: hidden;
-}
+#mainimg{position:relative; height:225px; clear:both; background:url(../images/b_slogan.jpg) 0 0 no-repeat;}
+#mainimg img.sloganTitle {position: absolute; border:0px; top:20px; left:300px;}
+#mainimg img.sloganText {position: absolute; border:0px; top:85px; left:330px;}
 
-#page_container {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 535px;
-	top: -1px;
-}
-
-.panel_button {
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	top: 1px;
-	width: 173px;
-	height: 54px;
-	background: url(images/panel_button.png);
-	z-index: 20;
-	filter:alpha(opacity=80);
-	-moz-opacity:0.80;
-	-khtml-opacity: 0.80;
-	opacity: 0.80;
-	cursor: pointer;
-}
-
-.panel_button img {
-	position: relative;
-	top: 10px;
-	left: 180px;
-	border: none;
-}
-
-.panel_button a {
-	text-decoration: none;
-	color: #000000;
-	font-size: 20px;
-	font-weight: bold;
-	position: relative;
-	top: 5px;
-	left: 185px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.panel_button a:hover {
-	color: #999999;
-}
-
-#toppanel {
-	position: absolute;
-	width: 535px;
-	left: 0px;
-	z-index: 25;
-	text-align: left;
-
-}
-
-#panel {
-	width: 535px;
-	position: relative;
-	top: 1px;
-	height: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 10;
-	overflow: hidden;
-	text-align: left;
-}
-
-#panel_contents {
-	background: black;
-	filter:alpha(opacity=80);
-	-moz-opacity:0.80;
-	-khtml-opacity: 0.80;
-	opacity: 0.80;
-	height: 100%;
-	width: 535px;
-	position: absolute;
-	z-index: -1;
-}
-
-#panel h1 {
-	text-align: center;
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	color: white;
-	font-weight: normal;
-	line-height: 35px;
-	left: 275px;
-	position: absolute;
-	top: 10px;
-}
-
-#panel h2 {
-	text-align: center;
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	color: #447c6f;
-	line-height: 25px;
-	font-size: 16px;
-	position: absolute;
-	top: 60px;
-	left: 350px;
-}
-
-.border {
-	border: 15px #1d1d1d solid;
-}
-
-.greyFonts {
-	color: #999999;
-	font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
-	font-weight: bold;
-}
-
-img.border {
-	float: left;
-	margin-right: 15px;
-	margin-bottom: 8px;
-}
-img.border_pic {
-	border: 15px #1d1d1d solid;
-	position: absolute;
-	top: 110px;
-	float: left;
-	margin-left: 150px;
-	width: 250px;
-	height: 150px;
-	z-index: 30;
-}
-div#login {
-	width: 475px;
-	height: 450px;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	background: #46392f;
-	text-align: left;
-	padding-left: 10px;
-}
-div#login p {
-	color: #CCCCCC;
-	font-family: Century Gothic, Georgia, "Times New Roman", Times, serif;
-	line-height: 25px;
-}
-div#login input#password {
-	position: relative;
-	right: -6px;
-}
-div#login input#login_btn {
-	border: 1px #899690 solid;
-	cursor: pointer;
-	position: relative;
-	top: 30px;
-	left: 86px;
-}
-
-#mainimg{width:560px; position:relative; height:225px; clear:both; background:url(../images/images/b_slogan.jpg) 0 0 no-repeat; margin:12px 0 0 0;}
-#mainimg img {position: absolute; top:126px; left:424px}
-
-
-/* CONTENT */
-#content{width:800px; position:relative; margin: 0 auto; clear:both; background:#70848f; border-bottom: #FFFFFF 1px dashed; border-top: #FFFFFF 1px dashed;}
+/*CONTENT*/
+#content{width:747px; height: 300px; position:relative; margin: 0 auto; clear:both; background:#70848f; border-bottom: #FFFFFF 1px dashed; border-top: #FFFFFF 1px dashed;}
 /*#content a{font:10px/14px Tahoma, sans-serif; color:#00e0f9; text-decoration:none }*/
 /*#content a:hover{color:#FFF;}*/
-
-#leftPan{width:240px; position:relative; float:left; background:url(../images/images/b_leftpan.jpg) 0 0 repeat-y; }
-
+#leftPan{width:212px; position:relative; float:left; background:url(../images/b_leftpan.jpg) 0 0 repeat-y; }
 
 #services{position:relative; margin: 20px 15px 15px 15px}
-#services h2{width:182px; height:25px; background:url(../images/images/h_services.jpg) 0 0 no-repeat; position:relative; padding-bottom:15px}
-#services p{width:200px; position:relative; padding: 0 0 0 4px; }
-#services p span{width:200px; font:10px/14px Tahoma, sans-serif; color:#101010; font-weight:bold;}
+#services h2{width:182px; height:25px; background:url(../images/h_services.jpg) 0 0 no-repeat; position:relative; padding-bottom:15px}
+#services p{width:170px; position:relative; padding: 0 0 0 4px; }
+#services p span{width:170px; font:10px/14px Tahoma, sans-serif; color:#000000; font-weight:bold;}
 #services ul{color:#3c474f; margin:10px 0px 10px 15px;}
 
-/*used to show spacer line in UI*/
-.spacerline{width:800px; position:relative; clear:both; height:2px; background:url(../images/images/b_hline.jpg) 0 0 repeat-x; margin:0 }
+.spacerline{position:relative; clear:both; height:2px; background:url(../images/b_hline.jpg) 0 0 repeat-x; margin:0 }
 
+/*this is for spacing at bottom after content and before footer which has the information text*/
 #mortgage {position:relative; margin: 20px 15px 15px 5px}
-#mortgage h2{width:182px; height:25px; position:relative; padding-bottom:15px; margin-left:10px}
-#mortgage p{width:80px; position:relative; padding: 22px 10px 20px 103px; background:url(../images/img_mortgage.jpg) 0 0 no-repeat; font:10px/14px Tahoma, sans-serif; color:#000000; font-weight:bold; }
+#mortgage h2{width:182px; height:65px; position:relative; padding-bottom:15px; margin-left:10px}
 
-#mortgage ul {position:relative; clear:both; margin: 5px 20px 0 16px}
-#mortgage ul li{height:18px;}
-#mortgage ul li a{font:10px/18px Tahoma, sans-serif; color:#fff; font-weight:normal; text-decoration:underline; background:url(../images/arrow1.gif) 0 7px no-repeat; padding: 0 0 0 7px; display:block;}
-#mortgage ul li a:hover{text-decoration:none; background:#3c474f;}
-
-#rightPan{width:535px; position:relative; float:left;}
+#rightPan{width:535px; position:relative; float:left; margin:0 0 0 0;/* color:#2f383f;*/}
 
 #welcome{width:500px; position:relative; margin:15px 0 0 15px; }
-#welcome h2{width:285px; height:24px; background:url(../images/images/h_welcome.jpg) 0 0 no-repeat; position:absolute; top:0; left:0;}
-#welcome h3{width:113px; height:113px; background:url(../images/img_welcome.jpg) 0 0 no-repeat; position:absolute; top:40px; left:4px;}
-#welcome p{width:350px; position:relative; margin: 0 0 10px 137px; clear:both; padding-top:40px}
-#welcome p span{font:12px/18px Tahoma, sans-serif; color:#00e0f9; font-weight:normal;}
-/*#welcome div{font:12px/18px Tahoma, sans-serif; color:#00e0f9; font-weight:normal;}*/
+#welcome h2{width:400px; height:24px; background:url(../images/h_welcome.jpg) 0 0 no-repeat; position:absolute; top:0; left:0;}
+#welcome p{font:12px/14px sans-serif; position:relative; margin: 0 0 10px 25px; clear:both; padding-top:40px}
+/*#welcome p span{font:12px/18px Tahoma, sans-serif; color:#00e0f9; font-weight:normal;}*/
 
-#welcome ul{left:15px; width:155px; position:relative; float:left; padding-bottom:20px;}
-#welcome ul li{height:18px;}
-#welcome ul li a{font:10px/18px Tahoma, sans-serif; color:#fff; font-weight:normal; text-decoration:underline; background:url(../images/images/arrow1.gif) 0 7px no-repeat; padding: 0 0 0 7px; display:block;}
+#welcome ul{font:12px/14px sans-serif; left:15px; width:155px; position:relative; float:left; padding-bottom:20px;}
+#welcome ul.left {position:relative; float:left; margin: 0 0 0 50px;}
+#welcome ul.right {position: relative; margin: 0 0 0 30px;}
+#welcome ul li{height:16px;}
+#welcome ul li a{font:10px/16px Tahoma, sans-serif; color:#fff; font-weight:normal; text-decoration:underline; background:url(../images/arrow1.gif) 0 7px no-repeat; padding: 0 0 0 7px; display:block;}
 #welcome ul li a:hover{text-decoration:none; background:#3c474f;}
-#welcome ul.left {margin: 0 0 0 140px;}
-#welcome ul.right {margin: 0 0 0 30px;}
 
-#fcontainer{width:497px; position:relative; margin:150px 0 0 0px; }
-#fcontainer div{margin:10px 0px 0px 20px; color:#3c474f; /*rgb(255,147,76);*/}
-#fcontainer a{color:rgb(0,200,250); font-weight:normal; text-decoration:none; background:url(../images/arrow1.gif) 0 7px no-repeat; padding: 0 0 0 7px;}
+#fcontainer{font:11px/14px sans-serif; width:480px; position:relative; margin:0px 0 0 15px; border:0px; }
+#fcontainer div.note{margin:10px 0px 0px 20px; color:#3c474f; /*rgb(255,147,76);*/}
 
-
-#featured{width:331px; position:relative; float:left;}
-#featured h2{width:285px; height:24px; background:url(../images/h_featured.jpg) 0 0 no-repeat; position:relative; padding-bottom:17px}
-#featured p{width:225px; position:relative; padding: 0 0 20px 95px;}
-#featured p span.town{font:10px/14px Tahoma, sans-serif; color:#000; font-weight:bold;}
-#featured p span.price{font:10px/14px Tahoma, sans-serif; color:#000; font-weight:normal;}
-#featured p span.number{font:10px/14px Tahoma, sans-serif; color:#00e0f9; font-weight:bold;}
-#featured p.feat1{background:url(../images/img_featured1.jpg) 4px 0 no-repeat; }
-#featured p.feat2{background:url(../images/img_featured2.jpg) 4px 0 no-repeat; }
-
-#vspacerline{width:2px; height:164px; position:relative; float:left; padding-right:7px; margin-top:5px; background:url(../images/line1.jpg) 0 0 no-repeat;  }
-
-#links{width:157px; position:relative; float:left; padding-top:3px}
-#links h2{width:107px; height:22px; background:url(../images/h_links.jpg) 0 0 no-repeat; position:relative; padding-bottom:10px}
-#links ul{width:157px; position:relative; clear:both; padding-bottom:20px;}
-#links ul li{height:18px;}
-#links ul li.back{background:#5a6a72;}
-#links ul li a{font:11px/18px Tahoma, sans-serif; color:#fff; font-weight:normal; text-decoration:none; background:url(../images/arrow2.gif) 8px 7px no-repeat; padding: 0 0 0 26px; display:block;}
-#links ul li a:hover{text-decoration:underline;}
-
-/* FOOTER */
-
-#footer{width:800px; height:53px; position:relative; margin: 0 auto; clear:both; background:#3c474f;}
+#footer{width:747px; height:53px; position:relative; margin:20px auto; clear:both; background:#3c474f;}
 #footer img{width:156px; height:37px; position:absolute; left:15px; top:9px;}
-#footer p{width:535px; position:relative; margin: 20px 0 0 250px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff; display:block;}
-#footer a{font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal;  color:#fff; text-decoration:none; padding: 0 5px}
+
+#footer p{width:535px; position:absolute; margin: 0 0 0 250px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff; display:block;}
+#footer a{font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal;  color:#fff; text-decoration:none; padding:0 5px}
 #footer a:hover{color:#000; text-decoration:none; background:#fff;}
-#footer div{margin:-10px 0 0 675px; width:150px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal;color:rgb(210,70,18);}
+/*#footer div{margin:-10px 0 0 675px; width:150px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal;color:rgb(210,70,18);}*/
 
 /* BOTTOM */
 
-#bottom{
-	width:800px;
-	height:40px;
-	position:relative;
-	margin: 0 auto;
-	clear:both;
-}
-#bottom a {
-	color: #FFFFFF;
-}
-#bottom p{width:800px; position:relative; margin: 10px 0 0 300px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff; display:block;}
-#sponsor{
-	width:800px;
-	margin:0 auto;
-	text-align: center;
-	padding: 10px 0px 10px 0px;
-}
+#bottom{width:747px; height:40px; position:relative; margin:-10px auto; clear:both;}
+#bottom a {color: #FFFFFF;}
+#bottom p{width:747px; position:absolute; margin: 0px 0 0 280px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff; display:block;}
+

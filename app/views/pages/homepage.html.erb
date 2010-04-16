@@ -1,88 +1,90 @@
-
-    <div class="span-20">
-	<form method="post" action="#" id="loginForm" name="loginForm" >
-	    <div id="formPan" class="span-6">
-		<h2>EXISTING CUSTOMERS</h2>
+<!-- LOGIN -->
+<div id="header">
+    <div id="formPan">
+	<form method="post" action="#" id="loginForm" name="loginForm">
+	    <h2>EXISTING CUSTOMERS</h2>
+	    <p>
+	       Please login with your ID and Password.
+	    </p>
+	    <div>
 		<p>
-		   Please login with your ID and Password.
+		    <label>User ID</label><input type="text" size="10" maxlength="30" />
+		    <label>Password</label><input type="password" size="10" maxlength="30" />
+		    <%= image_submit_tag("btn_submit.jpg", :class => 'submitBtn') %>
 		</p>
-		<div>
-		    <p>
-			<label>User ID</label><input type="text" size="10" maxlength="30" />
-			<label>Password</label><input type="password" size="10" maxlength="30" />
-			<%= image_submit_tag("images/btn_submit.jpg", :class => 'submitBtn') %>
-		    </p>
-		</div>
-		<div class="register">
-		   New to our site? Please register <%= link_to "here", signup_path %>
-		</div>
 	    </div>
-	    <div id="mainimgPan" class="pull-quart span-14 last">
-		<a href=#><%= image_tag("images/btn_quote.jpg", :class => "priceQuote") %></a>
-		<div id="mainimg" />
-		<%= image_tag("images/slogan_text_title.jpg", :class => "sloganTitle") %>
-		<%= image_tag("images/slogan_text_desc.jpg", :class => "sloganDesc") %>
+	    <div class="register">
+	       New to our site? Please register <%= link_to "here", signup_path %>
 	    </div>
 	</form>
     </div>
     
-    <div class="span-20">
-	<div id="content" class="span-20">
-	    <div id="leftPan" class="span-6">
-		<div id="services">
-		    <h2></h2>
-		    <p>
-			<span>Our scope of drafting/design work includes the following:</span>
-		    </p>
-		    <ul id="servicesList">
-			<li>* Architectural</li>
-			<li>* Structural</li>
-			<li>* Electrical</li>
-			<li>* Mechanical</li>
-			<li>* Plumbing</li>
-			<li>* HVAC</li>
-		    </ul>
-		    <br/>
-		</div>
-    
-		<div class="spacerline"></div>
+    <div id="mainimgPan">
+	<ul>
+	    <a href="#"><%= image_tag("btn_quote_new.jpg", :width => "133", :height => "15", :border => "0", :style => "float:right") %></a>
+	</ul>
 	
-		<div id="mortgage">
-		    <h2></h2>
-		</div>
-	    </div>
+	<div id="mainimg">
+	    <a href="#"><%= image_tag("slogan_text_title.jpg", :class => "sloganTitle") %></a>
+	    <a href="#"><%= image_tag("slogan_text_desc.jpg", :class => "sloganText") %></a>
+	</div>
+    </div>
+    
+</div>
+
+<!-- CONTENT -->
+
+<div id="content">
+    <div id="leftPan">
+	<div id="services">
+	    <h2></h2>
+	    <p>
+		<span>Our scope of drafting/design work includes the following:</span>
+	    </p>
+	    <ul id="servicesList">
+		<li>* Architectural</li>
+		<li>* Structural</li>
+		<li>* Electrical</li>
+		<li>* Mechanical</li>
+		<li>* Plumbing</li>
+		<li>* HVAC</li>
+	    </ul>
+	</div>
+	<div id="mortgage">
+	    <h2></h2>
+	</div>
+    
+    </div>
+    
+    <div id="rightPan">
+	<div id="welcome">
+	    <h2></h2>
+	    <p>
+		Our company is interested in building relationships with companies in need of drafting or design work, ongoing contract work or any kind of small or big tasks which involve AutoCAD.
+	    </p>
+	    <br />
+		<ul class="left">
+		    Our scope of drafting/design work includes the following: 
+		</ul>
+		<ul class="right">
+		<li><a href="#">Architectural</a></li>
+		<li><a href="#">Structural</a></li>
+		<li><a href="#">Electrical</a></li>
+		<li><a href="#">Mechanical</a></li>
+		<li><a href="#">Plumbing</a></li>
+		<li><a href="#">HVAC</a></li>
+		</ul>
 	    
-	    <div id="rightPan" class="span-13 last">
-		<div id="welcome">
-		    <h2></h2>
-		    <p><span></span>
-		    </p>
-		    <div>
-			Our company is interested in building relationships with companies in need of drafting or design work, ongoing contract work or any kind of small or big tasks which involve AutoCAD.
-		    </div>
-		    <br />
-		    <ul class="left">
-			Our scope of drafting/design work includes the following: 
-		    </ul>
-		    
-		    <ul class="right">
-		    <li><a href="#">Architectural</a></li>
-		    <li><a href="#">Structural</a></li>
-		    <li><a href="#">Electrical</a></li>
-		    <li><a href="#">Mechanical</a></li>
-		    <li><a href="#">Plumbing</a></li>
-		    <li><a href="#">HVAC</a></li>
-		    </ul>
-		</div>
-		
-		<div id="fcontainer">
-		    <div>
-			Pricing for Design/Drafting from sketches or ideas varies depending on content.
-			Please click <a href="#">here</a> or Get A Quote button above to get pricing information.
-		    </div>
-		</div>
-		<br/>
+	</div>
+	<div class="spacerline"></div>
+	<div id="fcontainer">
+	    <div class="note">
+		Pricing for Design/Drafting from sketches or ideas varies depending on content.
+		Please click <a href="#">here</a> or Get A Quote button above to get pricing information.
 	    </div>
+	    <br />
 	</div>
     </div>
 </div>
+    
+

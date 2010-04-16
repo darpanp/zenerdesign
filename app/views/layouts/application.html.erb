@@ -6,9 +6,9 @@
   <%= render 'layouts/stylesheets' %>
 </head>
 <body>
-  <div class="container">
+  <div id="container">
 	<%= render 'layouts/header' %>
-	<div id="contents_div" class="span-20 prepend-2 append-2">
+	<div id="main_contents">
 	  <%= yield %>
 	</div>
 	<%= render 'layouts/footer' %>
