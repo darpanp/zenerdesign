@@ -1,9 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
   # The priority is based upon order of creation: first created -> highest priority.
+  map.resources :users
+  
   map.homepage  '/homepage', :controller => 'pages', :action => 'homepage'
   map.aboutus   '/aboutus', :controller => 'pages', :action => 'aboutus'
   map.contact   '/contact', :controller => 'pages', :action => 'contact'
-  map.signup    '/signup', :controller => 'pages', :action => 'signup'
+  
+  #we are wiring up User object to this and calling its new action
+  map.signup    '/signup', :controller => 'users', :action => 'new'
   
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
