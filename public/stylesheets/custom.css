@@ -2,8 +2,6 @@
 body{padding:0px; margin:0px; background:#2f383f; color:#FFF; font:10px/14px Tahoma, sans-serif;}
 div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
 
-div.field, div.actions {margin-bottom: 10px;}
-
 #top{width:747px; height:91px; position:relative; background:url(../images/b_top.jpg) 0 0 no-repeat; margin: 0 auto;}
 #logo{width:186px; height:36px; position:absolute; top:34px; left:11px }
 
@@ -89,12 +87,16 @@ ul.menu li.contacts a:hover{width:92px; height:66px; background:url(../images/bt
 #bottom a {color: #FFFFFF;}
 #bottom p{width:747px; position:absolute; margin: 0px 0 0 280px; font:10px/14px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff; display:block;}
 
-#signup{font:11px/14px sans-serif; color:#000000; width:747px; height:auto; position:relative; float:left; margin:0 0 0 0; background:#70848f; border-bottom: #FFFFFF 1px dashed; border-top: #FFFFFF 1px dashed;}
-#signup h2{margin: 10px 0 0 20px;}
+#maincontent{width:747px; height:auto; position:relative; float:left; margin:0 0 20px 0; background:#70848f; border-bottom: #FFFFFF 1px dashed; border-top: #FFFFFF 1px dashed;}
+#signup{font:11px/14px sans-serif; color:#000000; width:535px; height:auto; position:relative; float:left; margin:10px 0 0 30px;}
+#signup h2{margin: 10px 0 10px 0px;}
+
+div.field, div.actions {margin-bottom: 10px;}
+div.fieldlabel {margin-bottom: 0px;}
 
 .fieldWithErrors {
 padding: 2px;
-background-color: red;
+background-color: #7F0000;
 display: table;
 }
 .fieldWithErrors label {
@@ -102,7 +104,7 @@ color: #fff;
 }
 #errorExplanation {
 width: 400px;
-border: 2px solid red;
+border: 2px solid #7F0000;
 padding: 7px;
 padding-bottom: 12px;
 margin-bottom: 20px;
@@ -114,15 +116,18 @@ font-weight: bold;
 padding: 5px 5px 5px 15px;
 font-size: 12px;
 margin: -7px;
-background-color: #c00;
+background-color: #7F0000; /*#c00;*/
 color: #fff;
 }
 #errorExplanation p {
 color: #333;
+font-size: 12px;
+margin-top:5px;
 margin-bottom: 0;
 padding: 5px;
 }
 #errorExplanation ul li {
 font-size: 12px;
 list-style: square;
+margin:0 0 0 10px;
 }

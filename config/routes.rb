@@ -8,7 +8,9 @@ ActionController::Routing::Routes.draw do |map|
   
   #we are wiring up User object to this and calling its new action
   map.signup    '/signup', :controller => 'users', :action => 'new'
+  #map.connect '/users', :controller => 'users', :action => 'new'
   
+  #map.users    '/users', :controller => 'users', :action => 'new'
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
   # Keep in mind you can assign values other than :controller and :action
