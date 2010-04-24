@@ -1,13 +1,17 @@
 ActionController::Routing::Routes.draw do |map|
   # The priority is based upon order of creation: first created -> highest priority.
   map.resources :users
+  map.resources :sessions, :only => [:new, :create, :destroy]
   
   map.homepage  '/homepage', :controller => 'pages', :action => 'homepage'
   map.aboutus   '/aboutus', :controller => 'pages', :action => 'aboutus'
   map.contact   '/contact', :controller => 'pages', :action => 'contact'
   
+  map.signin    '/signin', :controller => 'sessions', :action => 'new'
+  
   #we are wiring up User object to this and calling its new action
-  map.signup    '/signup', :controller => 'users', :action => 'new'
+  #map.signup    '/signup', :controller => 'users', :action => 'new'
+  #map.users     '/users', :controller => 'users', :action => 'new'
   #map.connect '/users', :controller => 'users', :action => 'new'
   
   #map.users    '/users', :controller => 'users', :action => 'new'
@@ -49,6 +53,6 @@ ActionController::Routing::Routes.draw do |map|
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
   map.root :controller => 'pages', :action => 'homepage'
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  #map.connect ':controller/:action/:id'
+  #map.connect ':controller/:action/:id.:format'
 end

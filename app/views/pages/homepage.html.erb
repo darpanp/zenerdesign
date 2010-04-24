@@ -14,7 +14,7 @@
 		</p>
 	    </div>
 	    <div class="register">
-	       New to our site? Please register <%= link_to "here", signup_path %>
+	       New to our site? Please register <%= link_to "here", :controller => 'users', :action => 'new'  %>
 	    </div>
 	</form>
     </div>
