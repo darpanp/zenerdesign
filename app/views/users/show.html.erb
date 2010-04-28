@@ -1,37 +1,9 @@
     <div id="maincontent">
     <div id="signup">
-	<h2>Sign Up</h2>
-	      <% form_for(@user) do |f| %>
-                <%= f.error_messages %>
-                <div class="fieldlabel">
-                  <%= f.label :name %>
-                </div>
-                <div class="field">
-                  <%= f.text_field :name %>
-                </div>
-                <div class="fieldlabel">
-                  <%= f.label :email %>
-                </div>
-                <div class="field">
-                  <%= f.text_field :email %>
-                </div>
-                <div class="fieldlabel">
-                  <%= f.label :password %>
-                </div>
-                <div class="field">
-                  <%= f.password_field :password %>
-                </div>
-                <div class="fieldlabel">
-                  <%= f.label :password_confirmation, "Confirmation" %>
-                </div>
-                <div class="field">
-                  <%= f.password_field :password_confirmation %>
-                </div>
-                <br />
-                <div class="actions">
-                  <%= f.submit "Sign up" %>
-                </div>
-              <% end %>
+	<h2>Welcome <%=@user.name%></h2>
+	<p>
+	    Need to add more stuff here like personalized things!
+	</p>
 	    <br />
     </div>
     </div>
