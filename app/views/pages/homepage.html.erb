@@ -1,22 +1,48 @@
 <!-- LOGIN -->
 <div id="header">
     <div id="formPan">
-	<form method="post" action="#" id="loginForm" name="loginForm">
-	    <h2>EXISTING CUSTOMERS</h2>
-	    <p>
-	       Please login with your ID and Password.
-	    </p>
-	    <div>
+	<!--<form method="post" action="#" id="loginForm" name="loginForm">-->
+	<!--    <h2>EXISTING CUSTOMERS</h2>-->
+	<!--    <p>-->
+	<!--       Please login with your ID and Password.-->
+	<!--    </p>-->
+	<!--    <div>-->
+	<!--	<p>-->
+	<!--	    <label>User ID</label><input type="text" size="10" maxlength="30" />-->
+	<!--	    <label>Password</label><input type="password" size="10" maxlength="30" />-->
+	<!--	    <%= image_submit_tag("btn_submit.jpg", :class => 'submitBtn') %>-->
+	<!--	</p>-->
+	<!--    </div>-->
+	<!--    <div class="register">-->
+	<!--       New to our site? Please register <%= link_to "here", :controller => 'users', :action => 'new'  %>-->
+	<!--    </div>-->
+	<!--</form>-->
+	      <% form_for(:session, :url => sessions_path) do |f| %>
+		<h2>EXISTING CUSTOMERS</h2>
 		<p>
-		    <label>User ID</label><input type="text" size="10" maxlength="30" />
-		    <label>Password</label><input type="password" size="10" maxlength="30" />
-		    <%= image_submit_tag("btn_submit.jpg", :class => 'submitBtn') %>
+		    Please login with your Email and Password.
 		</p>
-	    </div>
-	    <div class="register">
-	       New to our site? Please register <%= link_to "here", :controller => 'users', :action => 'new'  %>
-	    </div>
-	</form>
+		<% flash.each do |key, value| %>
+		    <div class="flash <%= key %>"><%= value %></div>
+		<% end %>
+		<div class="loginWidget">
+		    <div class="field_login">
+			<%= f.label :email %><br />
+			<%= f.text_field :email %>
+		    </div>
+		    <div class="field_login">
+			<%= f.label :password %><br />
+			<%= f.password_field :password %>
+		    </div>
+		    <div class="actions">
+			<%= image_submit_tag("btn_submit.jpg", :class => 'submitBtn') %>
+		    </div>
+		</div>
+		<div class="register">
+		    New to our site? Please register <%= link_to "here", :controller => 'users', :action => 'new'  %>
+		</div>
+              <% end %>
+	    <br />
     </div>
     
     <div id="mainimgPan">

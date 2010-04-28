@@ -26,10 +26,14 @@ ul.menu li.contacts a:hover{width:92px; height:66px; background:url(../images/bt
 #formPan{width:212px;height:257px; float:left; background:url(../images/b_form.jpg) 0 0 no-repeat; }
 #formPan h2{position:relative; font:14px/16px sans-serif; color:#505050; margin: 7px 0px 0px 20px;}
 #formPan p{position:relative; color:#505050; font-size:11px; margin: 20px 10px 0px 20px;}
-#formPan div {margin:0px 0px 0px 7px}
-#formPan div p input{height:16px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:150px;}
-#formPan div p input.submitBtn{margin:15px 0px 0 85px;  width:66px; height:17px; line-height:0; font-size:0;}
-#formPan div.register{position:relative; color:#505050; font-size:11px; margin: 10px 0px 0px 20px;}
+#formPan div {margin:15px 0 0 15px; color:#505050;}
+#formPan div input{height:16px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; color:#505050;}
+
+/*#formPan div p input{height:16px; border: #abadb3 1px solid; font:10px/14px Tahoma, sans-serif; width:50px; color:#505050;}*/
+
+#formPan div input.submitBtn{margin:0 0 0 70px;  width:66px; height:17px; line-height:0; font-size:0;}
+
+#formPan div.register{position:relative; color:#505050; font-size:11px; margin:10px 0 0 15px;}
 
 #mainimgPan{width:535px; float:left;}
 #mainimgPan ul{position:relative; margin: 6px 0 0 65px; clear:both; height:26px;}
